@@ -130,10 +130,16 @@ const mapStateToProps = createStructuredSelector({ isInsertMode })
 
 const Decorated = connect(mapStateToProps)(Raw)
 
-const Toolbar = (props: any) => (
-  <Provider {...props}>
-    <Decorated {...props} />
-  </Provider>
-)
+class Toolbar extends Component {
+    constructor(props: Props) {
+      super(props)
+    }
+
+    render() {
+      <Provider {...props}>
+        <Decorated {...props} />
+      </Provider>
+    }
+}
 
 export default Toolbar

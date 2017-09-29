@@ -9,27 +9,35 @@
     "build:watch": "npm-run-all --parallel build:lib:watch build:css:watch",
     "build:lib": "babel ./src --source-maps --ignore test.js --out-dir ./lib",
     "build:lib:watch": "npm run build:lib -- --watch",
-    "build:css": "postcss -c ../../postcss.config.js --dir lib/ src/index.css",
+    "build:css": "postcss -c ./postcss.config.js --dir lib/ src/index.css",
     "build:css:watch": "npm run build:css -- -w",
     "docs": "documentation build ./src/**/*.js --format md --github -o ../../docs/api/ui.md",
     "prebuild": "npm run clean",
     "clean": "rimraf \"lib/*\"",
-    "flow:generate": "flow-typed install --flowVersion=0.46.0"
-  },
-  "peerDependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-tap-event-plugin": "^2.0.1"
+    "flow:generate": "flow-typed install --flowVersion=0.54.0"
   },
   "dependencies": {
     "classnames": "^2.2.5",
     "device.js": "^2.3.0",
+    "flow": "^0.2.3",
     "material-ui": "^0.19.1",
     "ory-editor-core": "0.0.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-nested": "^2.1.2",
     "rc-tooltip": "^3.4.3",
-    "react-dnd": "^2.4.0",
+    "react": "^15.6.1",
+    "react-dnd": "^2.5.1",
+    "react-dom": "^15.6.1",
     "react-redux": "^5.0.4",
+    "react-tap-event-plugin": "^2.0.1",
     "reselect": "^3.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.0.2",
+    "flow-bin": "^0.54.1"
+  }
 }
