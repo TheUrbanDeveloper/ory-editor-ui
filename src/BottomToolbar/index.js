@@ -1,6 +1,5 @@
 // @flow
-import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles'
 import Drawer from 'material-ui/Drawer'
 import React from 'react'
 import { darkBlack } from 'material-ui/styles/colors'
@@ -14,7 +13,7 @@ const BottomToolbar = ({
   children?: Object,
   className?: string
 }) => (
-  <MuiThemeProvider muiTheme={getMuiTheme()}>
+  <MuiThemeProvider theme={createMuiTheme()}>
     <Drawer
       className={className}
       open={open}
