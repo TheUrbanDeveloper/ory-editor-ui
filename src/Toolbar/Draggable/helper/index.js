@@ -14,7 +14,7 @@ export const source = {
     const item = monitor.getItem()
     if (monitor.didDrop()) {
       setTimeout(() => {
-        item.insertMode()
+        item.editMode()
       }, 10)
       // If the item drop occurred deeper down the tree, don't do anything
       return
@@ -22,7 +22,7 @@ export const source = {
 
     item.clearHover()
     setTimeout(() => {
-      item.insertMode()
+      item.editMode()
     }, 100)
   }
 }
