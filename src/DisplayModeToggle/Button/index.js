@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import MuiButton from 'material-ui/Button'
+import { default as MuiButton } from 'material-ui/Button'
 import { device } from 'device.js'
 
 const Button = ({

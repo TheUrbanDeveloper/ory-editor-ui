@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { isInsertMode } from 'ory-editor-core/lib/selector/display'
 import { createStructuredSelector } from 'reselect'
 import { Editor } from 'ory-editor-core/lib'
-import List from 'material-ui/List/List'
+import List from 'material-ui/List'
 import TextField from 'material-ui/TextField'
 import {
   LayoutPlugin,
