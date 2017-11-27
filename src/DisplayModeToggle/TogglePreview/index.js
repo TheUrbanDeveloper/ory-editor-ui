@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import Devices from 'material-ui/svg-icons/device/devices'
+import DevicesIcon from 'material-ui-icons/Devices'
 import { connect } from 'react-redux'
 import { previewMode } from 'ory-editor-core/lib/actions/display'
 import { isPreviewMode } from 'ory-editor-core/lib/selector/display'
@@ -16,7 +16,7 @@ const Inner = ({
   previewMode: Function
 }) => (
   <Button
-    icon={<Devices />}
+    icon={<DevicesIcon />}
     description="Preview result"
     active={isPreviewMode}
     onClick={previewMode}

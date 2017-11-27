@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import FloatingActionButton from 'material-ui/FloatingActionButton'
+import MuiButton from 'material-ui/Button'
 import { device } from 'device.js'
 
 const Button = ({
@@ -19,14 +19,15 @@ const Button = ({
 }) => (
   <div className="ory-controls-mode-toggle-button">
     <div className="ory-controls-mode-toggle-button-inner">
-      <FloatingActionButton
+      <MuiButton
+        fab
         secondary={active}
         mini={device.mobile}
         onTouchTap={onClick}
         disabled={disabled}
       >
         {icon}
-      </FloatingActionButton>
+      </MuiButton>
     </div>
     <div className="ory-controls-mode-toggle-button-description">
       {description}

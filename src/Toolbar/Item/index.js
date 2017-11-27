@@ -4,7 +4,7 @@ import Avatar from 'material-ui/Avatar'
 import draggable from '../Draggable'
 import ListItem from 'material-ui/List/ListItem'
 import { Plugin } from 'ory-editor-core'
-import DragHandle from 'material-ui/svg-icons/editor/drag-handle'
+import DragHandleIcon from 'material-ui-icons/DragHandle'
 import Tooltip from 'rc-tooltip'
 
 class Item extends Component {
@@ -50,7 +50,7 @@ class Item extends Component {
                 placement="bottomLeft"
                 overlay={<span>Drag me!</span>}
               >
-                <DragHandle className="ory-toolbar-item-drag-handle" />
+                <DragHandleIcon className="ory-toolbar-item-drag-handle" />
               </Tooltip>
             </Draggable>
           </span>

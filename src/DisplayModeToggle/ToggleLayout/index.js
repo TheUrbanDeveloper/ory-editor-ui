@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import ViewQuilt from 'material-ui/svg-icons/action/view-quilt'
+import ViewQuiltIcon from 'material-ui-icons/ViewQuilt'
 import Button from '../Button'
 
 import { connect } from 'react-redux'
@@ -17,7 +17,7 @@ const Inner = ({
   layoutMode: Function
 }) => (
   <Button
-    icon={<ViewQuilt />}
+    icon={<ViewQuiltIcon />}
     description="Move things"
     active={isLayoutMode}
     onClick={layoutMode}

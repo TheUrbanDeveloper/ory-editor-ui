@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import ContentAdd from 'material-ui/svg-icons/content/add'
+import AddIcon from 'material-ui-icons/Add'
 import Button from '../Button'
 
 import { connect } from 'react-redux'
@@ -17,7 +17,7 @@ const Inner = ({
   insertMode: Function
 }) => (
   <Button
-    icon={<ContentAdd />}
+    icon={<AddIcon />}
     description="Add things"
     active={isInsertMode}
     onClick={insertMode}

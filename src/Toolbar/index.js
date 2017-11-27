@@ -6,7 +6,6 @@ import { isInsertMode } from 'ory-editor-core/lib/selector/display'
 import { createStructuredSelector } from 'reselect'
 import { Editor } from 'ory-editor-core/lib'
 import List from 'material-ui/List/List'
-import Subheader from 'material-ui/Subheader'
 import TextField from 'material-ui/TextField'
 import {
   LayoutPlugin,
@@ -73,7 +72,7 @@ class Raw extends Component {
 
     return (
       <Drawer className="ory-toolbar-drawer" open={isInsertMode}>
-        <Subheader>Add plugin to content</Subheader>
+        <span>Add plugin to content</span>
         <div style={{ padding: '0 16px' }} ref={this.onRef}>
           <TextField
             hintText="Search plugins"
@@ -82,7 +81,7 @@ class Raw extends Component {
           />
         </div>
         <List>
-          {content.length ? <Subheader>Content plugins</Subheader> : null}
+          {content.length ? <span>Content plugins</span> : null}
           {content.map((plugin: ContentPlugin, k: Number) => {
             const initialState = plugin.createInitialState()
 
@@ -101,7 +100,7 @@ class Raw extends Component {
           })}
         </List>
         <List>
-          {layout.length ? <Subheader>Layout plugins</Subheader> : null}
+          {layout.length ? <span>Layout plugins</span> : null}
           {layout.map((plugin: LayoutPlugin, k: Number) => {
             const initialState = plugin.createInitialState()
             const children = plugin.createInitialChildren()

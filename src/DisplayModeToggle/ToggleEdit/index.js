@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import Create from 'material-ui/svg-icons/content/create'
+import CreateIcon from 'material-ui-icons/Create'
 import Button from '../Button'
 
 import { connect } from 'react-redux'
@@ -17,7 +17,7 @@ const Inner = ({
   editMode: Function
 }) => (
   <Button
-    icon={<Create />}
+    icon={<CreateIcon />}
     description="Edit things"
     active={isEditMode}
     onClick={editMode}

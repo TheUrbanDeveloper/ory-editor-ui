@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import Resize from 'material-ui/svg-icons/action/settings-overscan'
+import SettingsOverscanIcon from 'material-ui-icons/SettingsOverscan'
 import { connect } from 'react-redux'
 import { resizeMode } from 'ory-editor-core/lib/actions/display'
 import { isResizeMode } from 'ory-editor-core/lib/selector/display'
@@ -16,7 +16,7 @@ const Inner = ({
   resizeMode: Function
 }) => (
   <Button
-    icon={<Resize />}
+    icon={<SettingsOverscanIcon />}
     description="Resize things"
     active={isResizeMode}
     onClick={resizeMode}
