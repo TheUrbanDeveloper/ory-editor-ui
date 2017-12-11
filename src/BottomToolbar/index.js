@@ -1,5 +1,5 @@
 // @flow
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles'
+import { MuiThemeProvider, createMuiTheme, withStyles } from 'material-ui/styles'
 import Drawer from 'material-ui/Drawer'
 import React from 'react';
 
@@ -29,7 +29,7 @@ const BottomToolbar = ({
   <MuiThemeProvider theme={createMuiTheme()}>
     <Drawer
       classes={{
-        paper: styles.paper
+        paper: props.classes.paper
       }}
       className={className}
       open={open}
@@ -51,4 +51,4 @@ const BottomToolbar = ({
   </MuiThemeProvider>
 )
 
-export default BottomToolbar
+export default withStyles(styles)(BottomToolbar);
