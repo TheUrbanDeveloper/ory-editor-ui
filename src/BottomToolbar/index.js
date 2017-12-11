@@ -19,23 +19,16 @@ const BottomToolbar = ({
       type={"permanent"}
       anchor={"bottom"}
       modalProps={{
-        style: {
-          top: 'inherit',
-          bottom: '0px',
-          height: 'auto',
-          margin: '0 auto',
-          left: '0',
-          right: '0',
-          width: 'auto',
-          transform: `translate(0, ${open ? '0' : '300px'})`,
-          textAlign: 'center',
-          background: 'transparent',
-          border: 'transparent',
-          overflow: 'visible',
-          boxShadow: 'none',
-          zIndex: 5
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        maxWidth: '900px',
+        textAlign: 'center',
+        background: 'transparent',
+        border: 'transparent',
+        overflow: 'visible',
+        boxShadow: 'none',
+        zIndex: 5
       }}
-    }
     >
       <div
         style={{
