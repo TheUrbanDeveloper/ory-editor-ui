@@ -1,7 +1,21 @@
 // @flow
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles'
 import Drawer from 'material-ui/Drawer'
-import React from 'react'
+import React from 'react';
+
+const styles = {
+  paper: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    maxWidth: '900px',
+    textAlign: 'center',
+    background: 'transparent',
+    border: 'transparent',
+    overflow: 'visible',
+    boxShadow: 'none',
+    zIndex: 5
+  }
+}
 
 const BottomToolbar = ({
   open = false,
@@ -14,23 +28,13 @@ const BottomToolbar = ({
 }) => (
   <MuiThemeProvider theme={createMuiTheme()}>
     <Drawer
+      classes={{
+        paper: styles.paper
+      }}
       className={className}
       open={open}
       type={"permanent"}
       anchor={"bottom"}
-      ModalProps={{
-        style: {
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: '900px',
-          textAlign: 'center',
-          background: 'transparent',
-          border: 'transparent',
-          overflow: 'visible',
-          boxShadow: 'none',
-          zIndex: 5
-        }
-      }}
     >
       <div
         style={{
