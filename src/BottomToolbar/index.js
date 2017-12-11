@@ -15,8 +15,8 @@ const BottomToolbar = ({
   <MuiThemeProvider theme={createMuiTheme()}>
     <Drawer
       className={className}
+      open={open}
       anchor={"bottom"}
-      classes={{ docked }}
       containerStyle={{
         top: 'inherit',
         bottom: '0px',
