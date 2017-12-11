@@ -16,6 +16,7 @@ const BottomToolbar = ({
     <Drawer
       className={className}
       open={open}
+      type={"permanent"}
       anchor={"bottom"}
       containerStyle={{
         top: 'inherit',
