@@ -18,10 +18,12 @@ const styles = {
 }
 
 const BottomToolbar = ({
+  classes,
   open = false,
   children,
   className
 }: {
+  classes: Object,
   open?: boolean,
   children?: Object,
   className?: string
@@ -29,7 +31,7 @@ const BottomToolbar = ({
   <MuiThemeProvider theme={createMuiTheme()}>
     <Drawer
       classes={{
-        paper: props.classes.paper
+        paper: classes.paper
       }}
       className={className}
       open={open}
