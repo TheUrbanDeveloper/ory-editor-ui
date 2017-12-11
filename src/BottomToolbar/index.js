@@ -18,16 +18,18 @@ const BottomToolbar = ({
       open={open}
       type={"permanent"}
       anchor={"bottom"}
-      modalProps={{
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        maxWidth: '900px',
-        textAlign: 'center',
-        background: 'transparent',
-        border: 'transparent',
-        overflow: 'visible',
-        boxShadow: 'none',
-        zIndex: 5
+      ModalProps={{
+        style: {
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          maxWidth: '900px',
+          textAlign: 'center',
+          background: 'transparent',
+          border: 'transparent',
+          overflow: 'visible',
+          boxShadow: 'none',
+          zIndex: 5
+        }
       }}
     >
       <div
