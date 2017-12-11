@@ -18,7 +18,7 @@ const BottomToolbar = ({
       open={open}
       type={"permanent"}
       anchor={"bottom"}
-      containerStyle={{
+      style={{
         top: 'inherit',
         bottom: '0px',
         height: 'auto',
