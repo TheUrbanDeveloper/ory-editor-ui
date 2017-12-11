@@ -16,7 +16,8 @@ const BottomToolbar = ({
     <Drawer
       className={className}
       open={open}
-      docked
+      anchor={"bottom"}
+      classes={{ docked }}
       containerStyle={{
         top: 'inherit',
         bottom: '0px',
